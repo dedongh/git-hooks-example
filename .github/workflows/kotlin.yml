@@ -31,5 +31,7 @@ jobs:
           distribution: 'adopt'
 
       # Runs a set of commands using the runners shell
-      - name: Build with Maven
+      - name: Run unit tests
+        run: mvn checkstyle:check
+      - name: Run unit tests
         run: mvn clean test
