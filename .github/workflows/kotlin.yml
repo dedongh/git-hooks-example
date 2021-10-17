@@ -31,7 +31,7 @@ jobs:
           distribution: 'adopt'
 
       # Runs a set of commands using the runners shell
-      - name: Run unit tests
+      - name: Check code styling
         run: mvn checkstyle:check
       - name: Run unit tests
         run: mvn clean test
