@@ -35,3 +35,5 @@ jobs:
         run: mvn checkstyle:check
       - name: Run unit tests
         run: mvn clean test
+      - name: Run the Maven verify phase
+        run: mvn --batch-mode --update-snapshots verify
